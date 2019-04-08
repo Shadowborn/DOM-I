@@ -42,6 +42,16 @@ const siteContent = {
     logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 //Navigation
+
+    const navColor = document.querySelectorAll('nav a');
+    navColor[0].style.color = 'green';
+    navColor[1].style.color = 'green';
+    navColor[2].style.color = 'green';
+    navColor[3].style.color = 'green';
+    navColor[4].style.color = 'green';
+    navColor[5].style.color = 'green';
+    
+
     const nav = document.querySelectorAll('nav a');
     nav[0].textContent = 'Services';
     nav[1].textContent = 'Product';
@@ -49,7 +59,21 @@ const siteContent = {
     nav[3].textContent = 'Features';
     nav[4].textContent = 'About';
     nav[5].textContent = 'Contact';
-
+    
+    //append new nav item
+    const newNav = document.createElement('a'); 
+    newNav.href = '#';
+    newNav.textContent = 'Water';                                
+    const navSelect = document.querySelector('nav')
+    navSelect.appendChild(newNav);
+    newNav.style.color = 'green';
+    
+    //prepend new nav item
+    const newNav2 = document.createElement('a');
+    newNav2.href = '#';
+    newNav2.textContent = 'Fire';
+    navSelect.prepend(newNav2);
+    newNav2.style.color = 'green';
 
 //CTA CONTENT
 
