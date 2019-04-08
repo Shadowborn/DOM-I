@@ -68,10 +68,24 @@ const siteContent = {
 // MAIN CONTENT
 
     //main h4
-    const mainH4 = document.querySelectorAll('.main-content h4')
+    const mainH4 = document.querySelectorAll('.main-content h4');
     mainH4[0].textContent = 'Features';
     mainH4[1].textContent = 'About';
     mainH4[2].textContent = 'Services';
     mainH4[3].textContent = 'Product';
     mainH4[4].textContent = 'Vision';
-    mainH4[5].textContent = 'Contact';
+
+    //main content top
+    const mainContentTop = document.querySelectorAll('.top-content p');
+    mainContentTop[0].textContent = 'Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+    mainContentTop[1].textContent = 'About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+
+    //middle image
+    const middleImage = document.querySelector('.middle-img');
+    middleImage.src = 'img/mid-page-accent.jpg';
+
+    //main content bottom
+    const mainContentBottom = document.querySelectorAll('.bottom-content p');
+    mainContentBottom[0].textContent = 'Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+    mainContentBottom[1].textContent = 'Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+    mainContentBottom[2].textContent = 'Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
